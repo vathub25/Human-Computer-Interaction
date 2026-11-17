@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Meine Barrierefreie Travel-Blogger Webseite mit CSS-Art</title>
+		<!--Stylesheet-->
+		<link rel="stylesheet" href="style_modern.css"/>
+		<link rel="stylesheet" href="css-art.css"/>
+				
+		<!--Favicon-->
+		<link rel="icon" type="Logo-png" href="logo.png">
+	</head>
+
+	<body>
+	<!--Logo & Name der Webseite + Anzeige was auf dem Bild zu sehen ist-->
+	<header>
+		<div class="header-left"> 
+			<img src="logo.png" alt="Travel-Blogger-Logo">
+			<div class="header-title">
+				<h1><span lang="en">Travel-Blogger</span></h1>
+			</div>		
+		</div>
+	</header>
+	
+	<hr>
+	
+	<!--Navigationsleiste-->
+		<nav>
+			<ul class="nav-list">
+				<li>
+					<a href="Home.html" accesskey="s">
+						<span class="buchstaben_unterstreichen">S</span>tartseite</a></li>
+				<li>
+					<a href="Destination.html" accesskey="r">
+						<span class="buchstaben_unterstreichen">R</span>eiseziele</a></li>
+				<li>
+					<a href="Tips.html" accesskey="t">
+						<span class="buchstaben_unterstreichen">T</span>ipps</a></li>
+				<li>
+					<a href="Inspiration.html" accesskey="i">
+						<span class="buchstaben_unterstreichen">I</span>nspiration</a></li>
+				<li>
+					<a href="Aboutme.html" accesskey="ü">
+						<span class="buchstaben_unterstreichen">Ü</span>ber mich</a></li>
+				<li class= "nav-item">
+					<a href="FAQ.html" aria-current="page" accesskey="q">
+						F A <span class="buchstaben_unterstreichen">Q</span></a></li>
+			</ul>
+		</nav>
+
+	<hr>
+	
+	<main class="main">	
+		<h1> F A Q </h1> 
+		
+		<p> Frage 1: </p>
+			<p> Antwort 1: .......... </p>
+		<p> Frage 2: </p>
+			<p> Antwort 2: .......... </p>
+		<p> Frage 3: </p>			
+			<p> Antwort 3: .......... </p>
+			
+		
+		<p> Nun können sie mir Fragen stellen, die noch nicht beantwortet wurden. </p>
+			<form action="#" method="post">
+				<div class="containerdetail">
+					<label for="name" accesskey="n" class="klasse_label">Name (muss kein echter Name sein):</label>
+					<input type="text" id="name" name="name" required />
+				</div>
+			
+				<div class="containerdetail">
+					<label for="email" accesskey="a">E-M<span class="label_erster_buchstabe_unterstreichen">a</span>il:</label>
+					<input type="email" id="email" name="email" required />
+				</div>
+		
+				<div class="containerdetail">
+					<label for="betreff" accesskey="b" class="klasse_label">Betreff:</label>
+					<input type="text" id="betreff" name="betreff" required />
+				</div>
+		
+				<div class="containerdetail">
+					<label for="frage" accesskey="w"><span class="label_erster_buchstabe_unterstreichen">W</span>as ist deine Frage?</label>
+					<textarea id="frage" name="frage" cols="30" rows="s">Hi! </textarea>
+				</div>
+				
+				<button type="submit">Senden</button>
+			</form>
+		
+	
+   <!--CSS-Art-Element-->
+	<figure class="art-element">
+        <div class="art-shape">
+			<div class="background">
+				<div class="oval">
+					<div class="circle">
+						<div class="small-circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <figcaption>
+			CSS-Auge symbolisiert Barrierefreiheit        
+		</figcaption>
+    </figure>
+
+	</main>
+	</body>
+ </html>

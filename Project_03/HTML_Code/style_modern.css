@@ -1,0 +1,246 @@
+/*-----------------------------------------------------
+	Stylesheet Modern
+   -----------------------------------------------------*/
+
+
+html{
+	font-size: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+
+/* Logo Platzierung */
+.header-left{
+	display: flex; 
+	align-items: center; 
+	justify-content: space-between;
+}
+
+/* Logo Größe */
+.header-left img{
+	width: 200px;
+}
+
+/* Titel Platzierung */
+.header-title{
+	font-size: 40px; 
+	text-align: center;
+}
+
+/*-----------------------------------------------------
+	Navigation
+   -----------------------------------------------------*/
+.nav-list{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-list a{
+	text-decoration: none;
+	color: black;
+}
+
+.nav-list li{
+	display: inline-block;
+	margin: 0 20px 0 20px;
+}
+
+/* Buchstabe unterstreichen, welche ein Kürzel für Tastaturbedienung ist. 
+   (Alt + jeweilige Buchstabe)                                                 */
+.buchstaben_unterstreichen {
+	border-bottom: 5px solid currentColor;
+}
+
+/* Markieren der Links, die mit Enter auswählbar ist */
+ul.nav-list a:hover,
+ul.nav-list a:focus,
+ul.nav-list a:active{
+	outline: 3px solid #000;
+    outline-offset: 2px;
+	border-radius: 50px;
+	background-color: yellow;
+}
+
+/* Alte Version, um die aktuelle Seite zu kennzeichnen.
+
+.home, .destination, .tipps, .inspiration, .aboutme, .faq{
+	border-radius: 50px; 
+	width: 80px;
+	height: 20px;
+	border:1px solid black; 
+	background: white; 
+	text-align: center;
+}
+*/
+
+/* Neue Version, um die aktuelle Seite zu kennzeichnen. */
+.nav-item a[aria-current="page"] {
+	display: inline-block;
+    border: 3px solid black;
+	border-radius: 50px;
+	padding: 5px 15px;
+	margin: 0 20px;
+}
+
+/* Überschrift auf der Ebene 1 */
+.main h1{
+	margin-top: 50px; 
+}
+
+/* Überschrift auf der Ebene 2 */
+.main h2{
+	margin-top: 30px;
+	font-weight: 300;
+}
+
+/* Überschrift auf der Ebene 3 */
+.main h3{
+	margin-top: 30px;
+	font-weight: 300;
+}
+
+/* Überschrift 1 bei Home */
+.section-title-1{
+	margin-top: 50px;
+	font-size: 36px;
+}
+
+/* Überschrift 2 bei Home */
+.section-title-2{
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Reiseziele hervorheben */
+.country-list{
+	
+}
+
+/* Bilder Positionierung */
+.picture{
+	text-align: center;
+}
+
+/* Bild verkleinern */
+.picture img{
+	width: 600px;
+	height: auto;
+}
+
+/* Bildunterschrift */
+.picture figcaption{
+	font-size: 20px;
+	color: black;
+	margin-top: 5px;
+}
+
+/* Ein Fenster für die Map (zentriert) */
+.main iframe{
+	width: 600px; 
+	height: 450px; 
+	border:0;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Alphapet hervorheben */
+.initial {
+    font-weight: bold;
+}
+
+
+
+/*-----------------------------------------------------
+	Formular
+   -----------------------------------------------------*/
+
+.containerdetail{
+	display: block;
+}
+
+label{
+	display: block;
+	margin-right: 5px;
+}
+
+.klasse_label::first-letter{
+	text-decoration: underline;
+}
+
+.label_erster_buchstabe_unterstreichen{
+	text-decoration: underline;
+}
+
+input{
+	width: 50%;
+	margin: 0 0 10px 0;
+}
+
+input, textarea{
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px lightgray;
+	font-size: inherit;
+}
+
+textarea{
+	resize: vertical;
+	min-height: 100px;
+	width: 50%;
+}
+
+button{
+	margin-top: 5px;
+	margin-bottom: 30px;
+	min-height: 3rem;
+	background-color: blue;
+	color: white;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border: 1px solid white;
+	border-radius: 10px;
+	box-shadow: inherit;
+}
+
+/* Farblich erkenntlich machen für Tastaturbedienung */
+input:focus, textarea:focus{
+	background-color: yellow;
+}
+
+button:focus{
+	color: black;
+	background-color: yellow;
+}
+
+
+/*-------------auf andere Medien:-------------*/
+
+@media(max-width: 900px){
+
+	/* Logo Größe */
+	.header-left img{
+		width: 100px;
+	}
+
+	/* Titel Platzierung */
+	.header-title{
+		font-size: 20px; 
+		text-align: center;
+	}
+	
+	/* Navigation */
+	.nav-list li{
+		display: block;
+		margin: 10px 0;
+	}
+	
+	/* Bildgröße verändern*/
+	.picture img {
+        width: 100%;
+        height: auto;
+    }
+}

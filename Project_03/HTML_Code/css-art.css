@@ -1,0 +1,80 @@
+/*-----------------------------------------------------
+	Stylesheet CSS-Art-Element
+   -----------------------------------------------------*/
+
+
+.art-element{
+	border: 5px dotted black;
+	padding: 10px;
+	
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.art-element figcaption{
+	margin-top: 8px;
+	font-weight: bold;
+}
+
+.art-shape{
+	width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hintergrund */
+.background{
+	width: 80px;
+    height: 80px;
+    background: transparent;
+    border-radius: 20px;
+	border: 3px solid black;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Auge (oval) */
+.oval{
+	width: 80px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+	border: 2px solid grey;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Iris */
+.circle{
+	width: 30px;
+	height: 30px;
+	background: blue;
+	border-radius: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Pupille */
+.small-circle{
+	width: 10px;
+	height: 10px;
+	background: black;
+	border-radius: 50%;
+}
+
+/* Hover-Effekt nur auf das Auge selbst */
+.oval:hover{
+	transform: rotate(360deg);
+	transition: 2s;
+}
